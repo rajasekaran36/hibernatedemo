@@ -12,11 +12,3 @@
     <property name="age"></property>  
   </class>  
  </hibernate-mapping>
- <hibernate-mapping>  
-    <class name="com.kgisl.raja.model.Department" table="Department">  
-      <id name="id">  
-       <generator class="assigned"></generator>  
-      </id>  
-      <property name="name"></property>
-    </class>  
-   </hibernate-mapping>  

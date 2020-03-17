@@ -29,18 +29,18 @@ public class App
         student.setName("Mandd");
         student.setAge(23);
 
-        session.merge(student);
+        session.save(student);
 
         transaction.commit();
 
-        transaction = session.beginTransaction();
+       /*  transaction = session.beginTransaction();
 
         Department department = new Department();
         department.setId(400);
         department.setName("ECE");
         department.setStartyear(2008);
         session.persist(department);
-        transaction.commit();
+        transaction.commit(); */
         
         System.out.println("Data Saved");
         session.close();
